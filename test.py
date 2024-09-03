@@ -71,5 +71,5 @@ def classify_and_move_image(image_path):
 
 # Process all images
 for file_name in os.listdir(data_dir):
-    if file_name.lower().endswith(('.png', '.jpg', '.jpeg')):
+    if file_name.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp')):
         classify_and_move_image(os.path.join(data_dir, file_name))
